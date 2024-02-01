@@ -3,17 +3,17 @@ package controllers
 import models.Lampara
 
 fun main() {
-    val primeraLamapara=Lampara()
-    primeraLamapara.settIdentificador("Baño")
+    val primeraLampara=Lampara()
+    primeraLampara.settIdentificador("Baño")
 
     val segundaLampara=Lampara()
-    primeraLamapara.settIdentificador("Habitación")
+    primeraLampara.settIdentificador("Habitación")
 
-    primeraLamapara.encender()
+    primeraLampara.encender()
     repeat(3){
-        primeraLamapara.cambioColor()
+        primeraLampara.cambioColor()
     }
-    primeraLamapara.cambioIntensidad()
+    primeraLampara.cambioIntensidad()
 
     segundaLampara.encender()
     repeat(2){

@@ -29,17 +29,18 @@ class Lampara {
         estadoLampara()
     }
 
-    fun cambioColor(){
-        when(val colorUsuario= readWord("Introduce el color de la lámpara","Introduce un color correcto")){
-            "blanco" -> "${WHITE_BOLD}$colorUsuario${RESET}"
-            "negro" -> "${BLACK_BOLD}$colorUsuario${RESET}"
-            "azul" -> "${BLUE_BOLD}$colorUsuario${RESET}"
-            "rojo" -> "${RED_BOLD}$colorUsuario${RESET}"
-            "amarillo" -> "${YELLOW_BOLD}$colorUsuario${RESET}"
-            "violeta" -> "${PURPLE_BOLD}$colorUsuario${RESET}"
+    fun cambioColor() {
+        color = when (val colorUsuario = readWord("Introduce el color de la lámpara", "Introduce un color correcto")) {
+            "blanco" -> WHITE_BOLD
+            "negro" -> BLACK_BOLD
+            "azul" -> BLUE_BOLD
+            "rojo" -> RED_BOLD
+            "amarillo" -> YELLOW_BOLD
+            "violeta" -> PURPLE_BOLD
             in listaColores -> colorUsuario
-            else ->{
-                println("${RED_BOLD_BRIGHT  } ERROR: el color no aparece en la lista. Se introducirá el color básico: Blanco ${RESET}")
+            else -> {
+                println("${RED_BOLD_BRIGHT} ERROR: el color no aparece en la lista. Se introducirá el color básico: Blanco ${RESET}")
+                "Blanco"
             }
         }
         estadoLampara()
