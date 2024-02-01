@@ -83,8 +83,9 @@ class Lampara {
      * @author Thalia Bravo
      */
     fun estadoLampara(){
-        val estadoLamapara= if (encendida){"Encendida"}else "Apagada"
+        val estadoLamapara= if (encendida){"${YELLOW_BACKGROUND} LÁMPARA ENCENDIDA"}else "${RED_BACKGROUND} LÁMPARA APAGADA"
         val asciiLampara=if(encendida) dibujoAsciiEncendido() else  dibujoAsciiApagado()
-        println("Identificador -> $identificador \nEstado -> $estadoLamapara \nColor -> $color \nIntensidad -> $intensidad ")
+        println("Identificador: $identificador Estado: $estadoLamapara, Color: $color, Intensidad: $intensidad ")
+        println(asciiLampara)
     }
 }
