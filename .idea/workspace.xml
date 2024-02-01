@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="491a6097-f0af-4326-8b85-1c450ef9c2e3" name="Changes" comment="first commit added programm structure">
-      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/controllers/fuctions.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/utilities/consoleColors.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/utilities/messages.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/utilities/utilities.kt" afterDir="false" />
+    <list default="true" id="491a6097-f0af-4326-8b85-1c450ef9c2e3" name="Changes" comment="added packages: controllers,utilities and models">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/controllers/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/controllers/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/controllers/Main.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,11 +80,20 @@
       <option name="project" value="LOCAL" />
       <updated>1706710657121</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added packages: controllers,utilities and models">
+      <option name="closed" value="true" />
+      <created>1706711532157</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1706711532157</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit added programm structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit added programm structure" />
+    <MESSAGE value="added packages: controllers,utilities and models" />
+    <option name="LAST_COMMIT_MESSAGE" value="added packages: controllers,utilities and models" />
   </component>
 </project>
