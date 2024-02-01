@@ -44,7 +44,7 @@ fun endOfProgramMessage(){
  */
 fun messageErrorDT(){
     //funcion que es llamada cuando el tipo de dato es incorrecto
-    println(RED_BOLD+"El tipus de dada és incorrecte, torni a intentar."+RESET)
+    println(RED_BOLD+"Tipo de dato incorrecto, vuelva a intentarlo"+RESET)
 }
 /**
  *This function prints range error message (used in functions that check input) in yellow
@@ -53,7 +53,7 @@ fun messageErrorDT(){
  */
 fun messageErrorRange(){
     //funcion que es llamada cuando el tipo de dato esta fuera del rango establecido
-    println(YELLOW_BOLD+"El tipus de dada no està en les opcions, torni a intentar."+RESET)
+    println(YELLOW_BOLD+"El tipo de dato no está en el rango de opciones, vuelva a intentarlo"+RESET)
 }
 
 fun messageExitProgram(){

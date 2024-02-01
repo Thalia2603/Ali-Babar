@@ -63,12 +63,12 @@ class Lampara {
      */
     fun cambioColor() {
         color = when (val colorUsuario = readWord("Introduce el color de la lámpara", "Introduce un color correcto")) {
-            "blanco" -> WHITE_BOLD
-            "negro" -> BLACK_BOLD
-            "azul" -> BLUE_BOLD
-            "rojo" -> RED_BOLD
-            "amarillo" -> YELLOW_BOLD
-            "violeta" -> PURPLE_BOLD
+            "blanco" -> "${WHITE_BOLD}$colorUsuario${RESET}"
+            "negro" -> "${BLACK_BOLD}$colorUsuario${RESET}"
+            "azul" -> "${BLUE_BOLD}$colorUsuario${RESET}"
+            "rojo" -> "${RED_BOLD}$colorUsuario${RESET}"
+            "amarillo" -> "${YELLOW_BOLD}$colorUsuario${RESET}"
+            "violeta" -> "${PURPLE_BOLD}$colorUsuario${RESET}"
             in listaColores -> colorUsuario
             else -> {
                 println("${RED_BOLD_BRIGHT} ERROR: el color no aparece en la lista. Se introducirá el color básico: Blanco ${RESET}")
@@ -83,9 +83,8 @@ class Lampara {
      * @author Thalia Bravo
      */
     fun estadoLampara(){
-        val estadoLamapara= if (encendida){"${YELLOW_BACKGROUND} LÁMPARA ENCENDIDA"}else "${RED_BACKGROUND} LÁMPARA APAGADA"
+        val estadoLamapara= if (encendida){"Encendida"}else "Apagada"
         val asciiLampara=if(encendida) dibujoAsciiEncendido() else  dibujoAsciiApagado()
-        println("Identificador: $identificador Estado: $estadoLamapara, Color: $color, Intensidad: $intensidad ")
-        println(asciiLampara)
+        println("Identificador -> $identificador \nEstado -> $estadoLamapara \nColor -> $color \nIntensidad -> $intensidad ")
     }
 }

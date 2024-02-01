@@ -15,13 +15,13 @@ fun main() {
     primeraLampara.settIdentificador("Baño")
 
     val segundaLampara=Lampara()
-    primeraLampara.settIdentificador("Habitación")
+    segundaLampara.settIdentificador("Habitación")
 
-    primeraLampara.encender()
+   /* primeraLampara.encender()
     repeat(3){
         primeraLampara.cambioColor()
     }
-    primeraLampara.cambioIntensidad()
+    primeraLampara.cambioIntensidad()*/
 
     segundaLampara.encender()
     repeat(2){
