@@ -1,5 +1,7 @@
 package models
 
+import controllers.dibujoAsciiApagado
+import controllers.dibujoAsciiEncendido
 import utilities.*
 
 class Lampara {
