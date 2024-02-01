@@ -2,18 +2,26 @@ package controllers
 
 import models.Lampara
 
+/**
+ * Funcion main: contiene las ejecuciones del programa donde se realiza lo siguiente:
+ * en primer lugar con la primeraLampara, se enciende, se cambia de color 3 veces y se le modifica la intensidad
+ * en segundo lugar con la segundaLamapra, se enciende, se cambia de color dos veces, se modifica la intensidad, se apaga, se cambia otra vez el color
+ * se enciende, se cambia el color una vez mas y por último se modifica la intensidad
+ * @author Thalia Bravo
+ * @since 01/02/2024
+ */
 fun main() {
-    val primeraLamapara=Lampara()
-    primeraLamapara.settIdentificador("Baño")
+    val primeraLampara=Lampara()
+    primeraLampara.settIdentificador("Baño")
 
     val segundaLampara=Lampara()
-    primeraLamapara.settIdentificador("Habitación")
+    primeraLampara.settIdentificador("Habitación")
 
-    primeraLamapara.encender()
+    primeraLampara.encender()
     repeat(3){
-        primeraLamapara.cambioColor()
+        primeraLampara.cambioColor()
     }
-    primeraLamapara.cambioIntensidad()
+    primeraLampara.cambioIntensidad()
 
     segundaLampara.encender()
     repeat(2){
