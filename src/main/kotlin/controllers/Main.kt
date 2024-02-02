@@ -24,7 +24,7 @@ fun main() {
     }
     primeraLampara.cambioIntensidad()
 
-    //SEGUNDA EJECUCIÓN DEL PROGRAMA
+    /*//SEGUNDA EJECUCIÓN DEL PROGRAMA
     segundaLampara.encender()
     repeat(2){
         segundaLampara.cambioColor()
@@ -34,5 +34,5 @@ fun main() {
     segundaLampara.cambioColor()
     segundaLampara.encender()
     segundaLampara.cambioColor()
-    segundaLampara.cambioIntensidad()
+    segundaLampara.cambioIntensidad()*/
 }
