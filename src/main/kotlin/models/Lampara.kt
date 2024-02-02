@@ -82,10 +82,11 @@ class Lampara {
      * Método de la clase Lámpara, muestra el estado actual de la lámpara, incluyendo identificador, estado (encendida o apagada), color e intensidad
      * @author Thalia Bravo
      */
-    fun estadoLampara(){
-        val estadoLamapara= if (encendida){"Encendida"}else "Apagada"
-        val asciiLampara=if(encendida) dibujoAsciiEncendido() else  dibujoAsciiApagado()
+    fun estadoLampara():Unit {
+        val estadoLamapara = if (encendida) "Encendida" else "Apagada"
+        val asciiLampara = if (encendida) dibujoAsciiEncendido() else dibujoAsciiApagado()
         println("Identificador -> $identificador \nEstado -> $estadoLamapara  \nColor -> $color  \nIntensidad -> $intensidad ")
         println(asciiLampara)
     }
+
 }
